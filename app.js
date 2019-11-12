@@ -27,7 +27,7 @@
         .attr("transform", `translate(${chartMargin.left}, ${chartMargin.top})`);
 
 
-    const tvData = await d3.csv("./data.csv").catch(error => console.warn(error));
+    const tvData = await d3.csv("data.csv").catch(error => console.warn(error));
     console.log(tvData);
     // log a list of names
     const names = tvData.map(data => data.id);
